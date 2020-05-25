@@ -26,6 +26,15 @@ functions:
       - http:
           path: login
           method: post
+
+  create_booking:
+    handler: create-booking/handler.create
+    role: ${ssm:${self:custom.stage}-create-booking-iam-role}
+    events:
+      - http:
+          path: bookings
+          method: post
+          authorizer: authorizer
   
   authorizer:
     handler: authorizer/handler.authorizer
