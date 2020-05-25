@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"users","Source":"../../infra/users","Dir":"../../infra/users"},{"Key":"1.users;../../infra/users","Source":"../../infra/users","Dir":".terraform/modules/3f563e4de7a831dbb4d319e645f0a600"},{"Key":"","Source":"","Dir":"."},{"Key":"bookings","Source":"../../infra/bookings","Dir":"../../infra/bookings"}]}

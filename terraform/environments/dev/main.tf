@@ -1,0 +1,14 @@
+module "users" {
+  source = "../../infra/users"
+  environment = "${var.environment}"
+  write_capacity = "${var.write_capacity}"
+  read_capacity = "${var.read_capacity}"
+  jwt_secret = "${var.jwt_secret}"
+}
+
+module "bookings" {
+  source = "../../infra/bookings"
+  environment = "${var.environment}"
+  write_capacity = "${var.write_capacity}"
+  read_capacity = "${var.read_capacity}"
+}
